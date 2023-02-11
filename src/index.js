@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-import { Server } from '../server'
+import Server from '../server/Server'
 
 const server = new Server()
 
