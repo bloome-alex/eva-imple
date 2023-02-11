@@ -1,6 +1,3 @@
-import {AuthenticationError} from "apollo-server-errors";
-
-
 export default {
     Query: {
         ping: (_,{},{user}) => {

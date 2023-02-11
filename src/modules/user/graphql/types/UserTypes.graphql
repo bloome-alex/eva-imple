@@ -1,0 +1,24 @@
+type User{
+    id: ID!
+    googleAuthenticated: Boolean
+    firstname: String
+    surname: String
+    email: String
+    username: String
+    birthdate: String
+    password: String
+}
+
+input InputUser{
+    googleAuthenticated: Boolean!
+    firstname: String!
+    surname: String!
+    email: String!
+    username: String!
+    birthdate: String!
+    password: String!
+}
+
+type Mutation{
+    createUser(googleAuthenticated:Boolean!, firstname:String!, surname:String!, email:String!, username:String!, birthdate:String!, password:String!): User
+}
