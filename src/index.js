@@ -18,7 +18,7 @@ apolloServer.applyMiddleware({app: expressApp})
 //Default route to frontend web on monorepo strategy
 expressApp.use(defaultRoute)
 
-const PORT = process.env.APP_PORT ? process.env.PORT : "5000"
+const PORT = process.env.PORT ? process.env.PORT : "5000"
 
 const server = expressApp.listen(PORT, () => {
     console.log(`Web Server started: ${PORT}`)
